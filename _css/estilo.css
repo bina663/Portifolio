@@ -1,0 +1,126 @@
+/* Padrão */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background:#8d3535ea url(../_imagens/bc.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #141414;
+}
+ul, a{
+    list-style:none;
+    text-decoration: none;
+}
+.fundo{
+    background-color:rgba(255, 255, 255, 0.795);
+}
+/**/
+/* principal */
+.area-show{
+    width:100%;
+    height:100%;
+    padding:95px;
+    border-bottom:1px solid black;
+    
+}
+.text-destaque{
+    padding:50px;
+    position: relative;
+    left:50%;
+    bottom: 30px;
+    transform: translate(-50%);
+    text-align: center;
+}
+.text-destaque h1{
+    font-size:2.9em;
+}
+.text-destaque p{
+    font-size:1.5em;
+}
+h3{
+    font-size:1.5em;
+}
+.contato{
+    position: relative;
+    top:20%;
+    padding:10px;
+}
+.contato p{
+    text-align: center;
+    margin:30px;
+}
+ul{
+    display: flex;
+    justify-content: center;
+}
+ul li a{
+    margin-left:20px;
+    display: block;
+    border:1px solid #141414;
+    color:#000000;
+    padding:15px;
+}
+ul li a:hover{
+    background-color: #aca9a9;
+    color:white;
+}
+/* informação sobre mim */
+.conteiner{
+    width:90%;
+    margin:40px auto;
+}
+.conteiner .sobre-mim{
+    border:1px solid black;
+    text-align: center;
+    padding:50px;
+    margin:10px;
+}
+.sobre-mim img.img-my{
+    width:25%;
+    border-radius: 50%;
+    border:3px solid black;
+}
+h2{
+    margin:30px;
+}
+.text{
+    color:black;
+    font-size:1.3em;
+}
+/* conhecimento */
+.sobre-mim .img-icon{
+    width:100px;
+    border-radius: 50%;
+}
+.sobre-mim ul.icons{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.sobre-mim:hover{
+    background-color: rgba(219, 219, 219, 0.795);
+}
+ul.icons li{
+    margin:20px;
+}
+/* Projetos */
+ul.icons{
+    display:flex;
+}
+ul.icons li img.img-project{
+    border:1px solid black;
+    width:200px;
+}
+/* footer */
+footer{
+    text-align: center;
+    margin:30px 0px;
+    color:black;
+}
