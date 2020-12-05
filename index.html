@@ -1,64 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='_css/estilo.css'>
-    <link rel='stylesheet' href='_css/normalize.css'>
     <title>Portfolio - Sabrina</title>
 </head>
-<bodys>
-    <div class="area-show fundo">
-        <div class="text-destaque">
-            <h1>Olá Meu nome é Sabrina, e Bem vindo(a) ao meu Portfolio :)</h1>
-            <p>Aqui e um dos lugares onde você pode ver minha, como atuo sendo Front-end atualmente, espero que goste do que veja e também e onde você sabera um pouco de mim</p>
-        </div><!-- //text-destaque -->
-        <div class='contato'>
-            <p>Redes Sociais e contato</p>
+<body>
+    <header class="fundo-color">
+        <nav>
             <ul>
-                    <li><a href=''>Github</a></li>
-                    <li><a href=''>Linkedin</a></li>
-                    <li><a href=''>Instagram</a></li>
-                    <li><a href=''>Whatsapp</a></li>
+                <li><a href='#home'>Home</a></li>
+                <li><a href='#sobre'>Sobre mim</a></li>
+                <li><a href='#projetos'>Projetos</a></li>
+                <li><a href='#contato'>Contato</a></li>
             </ul>
-        </div><!-- //contato -->
+        </nav>
+    </header>
+    <div id='home' class='conteiner apresentacao'>
+        <div class="text-destaque">
+            <h1>Olá me chamo Sabrina, e seja Bem-vindo ao meu Portfolio</h1>
+            
+            <p>aqui e onde voce vera como atuo sendo frontend atualmente, e sabera um pouco sobre mim</p>
+        </div><!-- //text-destaque-->
+    </div><!-- //conteiner apresetacao -->
+    <div id='sobre' class='conteiner sobre-mim'>
+        <div class='fundo-color sub-conteiner '>
+            <div class="about-me">
+                <img src='_imagens/perfil.jpg'>
+                <div class='text-border'>
+                    <h3>Sobre Mim</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed repudiandae, obcaecati architecto culpa molestias cumque quam aspernatur eos dolor, fuga illum fugiat, tempore vel. Eligendi consectetur animi quae cum repellat.</p>
+                </div><!-- //text-border -->
+            </div><!-- //about-me -->
+        </div><!-- me -->
+        <aside class="fundo-color sub-conteiner height-aside">
+            <div class='tec'>
+                <div class="about-me text-border">
+                    <h3>Tecnologias</h3>
+                </div><!-- //text-border -->
+                <div class="know-tec">
+                    <div class="icon">
+                        <img src='_imagens/html5.png'>
+                    </div><!-- //icon -->
+                </div><!-- //know-tec -->
+            </div><!-- //tec -->
+        </aside>
+    </div><!-- //conteiner sobre-mim -->
+    <div id='projetos' class='conteiner projetos'>
 
-    </div><!-- //area-show -->
-    <div class="conteiner">
-        <div class="sobre-mim fundo">
-            <img class='img-my' src='_imagens/perfil.jpg'>
-            <h2>Sobre mim</h2>
-            <div class="text">
-                <p>Eu sou Sabrina de Araújo Oliveira, tenho 19 Anos, Começei a programar em 2020, Apos Começar a fazer curso de Logica da Programação pois achei interessante o que se tratava o curso e acabei que me Apaixonei, e meu primeiro contato nesse mundo de desenvolvedora foi com a linguagem python ja que com minhas pesquisas querendo saber mais sobre, acabei descobrindo que tinha que aprender uma Linguagem e acabei descobrindo python no canal Curso em video, Meu objetivo e ser uma desenvolvedora FullStack, atualmente meus foco esta na area Web, mas quero ampliar meu lek e estudar tambem desenvolvimento Mobile, Eu quero inovar e da o meu melhor nisso que amo fazer e estudar<p>
-            </div><!-- //text -->
-        </div><!-- //sobre-mim-->
-        <div class='sobre-mim fundo'>
-            <h2>Conhecimento em:</h2>
-            <ul class="icons">
-                <li><img class="img-icon" src='_imagens/js.png'>
-                <figcaption>JavaScript</figcaption></li>
+    </div><!-- //conteiner apresetacao -->
+    <div id='contato' class='conteiner contato'>
 
-                <li><img class="img-icon" src='_imagens/html5.png'>
-                <figcaption>Html 5</figcaption></li>
-                <li><img class="img-icon" src='_imagens/css.png'>
-                <figcaption>Css 3</figcaption></li>
-                <li><img class="img-icon" src='_imagens/python.png'>
-                <figcaption>Python</figcaption></li>
-            </ul>
-        </div><!-- //habilidades -->
-        <div class="sobre-mim fundo">
-            <h2>Meus Projetos:</h2>
-                <ul class="icons">
-                    <li><img class="img-project" src='_imagens/projeto1.png'>
-                    <figcaption>Autenticação de login</figcaption></li>
-                    <li><img class="img-project" src='_imagens/projeto1.png'>
-                    <figcaption>Autenticação de login</figcaption></li>
-                    <li><img class="img-project" src='_imagens/projeto1.png'>
-                    <figcaption>Autenticação de login</figcaption></li>
-                </ul>
-    </div><!-- //conteiner -->
-    <footer>Copyright &copy; 2020</footer>
+    </div><!-- //conteiner apresetacao -->
+
 </body>
 </html>
