@@ -104,6 +104,7 @@ nav ul li:hover a{
     flex-wrap: wrap;
 }
 .sub-conteiner{
+    border:1px solid red;
     width:400px;
     height:400px;
     padding:10px;
@@ -139,6 +140,55 @@ nav ul li:hover a{
 }
 /*aside tecnologias */
 .tec{
-    border: 1px solid orange;
-    height:475px;
+    height:500px;
+}
+.know-tec{
+    margin:0 auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding:5px;
+    position: relative;
+    bottom:5px;
+}
+.know-tec img{
+    height:100px;
+    width:100px;
+    background-color: black;
+    border-radius: 50%;
+    border:3px solid black;
+    transition:all 1s;
+}
+.know-tec img:hover{
+    width:105px;
+}
+figure{
+    margin:10px;
+}
+figure figcaption{
+    text-align: center;
+    margin:20px 0px;
+}
+/* projetos */
+.projetos .sub-conteiner{
+    width:90%;
+    margin:0 auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.projetos figure{
+    padding:5px;
+    text-align:center;
+    width:200px;
+    height:150px;
+}
+.projetos figure img{
+    width:150px;
+    border:2px solid black;
+    border-radius: 5%;
+    transition:all 1s;
+}
+.projetos figure img:hover{
+    width:160px;
 }
