@@ -3,85 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/de8ebcc49f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href='_css/estilo.css'>
-    <title>Portfolio - Sabrina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="_css/normalize.css">
+    <link rel="stylesheet" href='_css/estilo.css'>
+    <title>Document</title>
 </head>
 <body>
-    <header class="fundo-color">
-        <nav>
-            <ul>
-                <li><a href='#home'>Home</a></li>
-                <li><a href='#sobre'>Sobre mim</a></li>
-                <li><a href='#projetos'>Projetos</a></li>
-                <li><a href='#contato'>Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div id='home' class='conteiner apresentacao'>
-        <div class="text-destaque">
-            <h1>Olá me chamo Sabrina, e seja Bem-vindo ao meu Portfolio</h1>
-            
-            <p>aqui e onde voce vera como atuo sendo frontend atualmente, e sabera um pouco sobre mim</p>
-        </div><!-- //text-destaque-->
-    </div><!-- //conteiner apresetacao -->
-    <div id='sobre' class='conteiner sobre-mim'>
-        <div class='fundo-color sub-conteiner '>
-            <div class="about-me">
-                <img src='_imagens/perfil.jpg'>
-                <div class='text-border'>
-                    <h3>Sobre Mim</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed repudiandae, obcaecati architecto culpa molestias cumque quam aspernatur eos dolor, fuga illum fugiat, tempore vel. Eligendi consectetur animi quae cum repellat.</p>
-                </div><!-- //text-border -->
-            </div><!-- //about-me -->
-        </div><!-- me -->
-        <aside class="fundo-color sub-conteiner height-aside">
-            <div class='tec'>
-                <div class="about-me text-border">
-                    <h3>Tecnologias</h3>
-                </div><!-- //text-border -->
-                <div class="know-tec">
-                    <figure>
-                        <img src="_imagens/html5.png">
-                        <figcaption>Html 5</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="_imagens/css.png">
-                        <figcaption>Css 3</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="_imagens/js.png">
-                        <figcaption>JavaScript</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="_imagens/python.png">
-                        <figcaption>Python</figcaption>
-                    </figure>
-                </div><!-- //know-tec -->
-            </div><!-- //tec -->
-        </aside>
-    </div><!-- //conteiner sobre-mim -->
-    <div id='projetos' class='conteiner projetos'>
-        <div class="fundo-color sub-conteiner">
-            <figure>
-                <img src="_imagens/projeto1.png">
-                <figcaption>Projeto 1</figcaption>
-            </figure>
-            <figure>
-                <img src="_imagens/projeto1.png">
-                <figcaption>Projeto 2</figcaption>
-            </figure>
-            <figure>
-                <img src="_imagens/projeto1.png">
-                <figcaption>Projeto 3</figcaption>
-            </figure>
-        </div>
-    </div><!-- //conteiner projetos -->
+    <nav>
+        <label for='menu'><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id='menu'>
+        <ul>
+            <li><a href='#home'>Home</a></li>
+            <li><a href='#sobre'>Sobre Mim</a></li>
+            <li><a href='#skills'>Skills</a></li>
+            <li><a href=''>Projetos</a></li>
+            <li><a href=''>Contato</a></li>
+        </ul>
+    </nav>
+    <div class="conteiner">
+        <section id='home'>
+            <section class="text">
+                <h1>Olá meu nome e sabrina,e seja Bem-Vindo(a) ao meu Portfolio</h1>
+                <p>Aqui e onde você sabera mais sobre mim, como atuo sendo Desenvolvedora Front End.</p>
+                <span>
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-linkedin"></i>
+                </span>
+            </section><!-- text -->
+        </section><!-- home -->
+        <section id='sobre'>
+            <section class="img-me">
+                <img src='_imagens/perfil.jpg' width="400px">
+            </section><!-- img-me -->
+            <section class="text-me">
+                <h3>Sobre Mim</h3>
+                <p>Meu nome e sabrina tenho 19 anos, Conheci area de Programação graças a uma  indicação de um curso de Logica da programação que fiz no Via Rapída um programa de governo do Estado de São Paulo,apos concluir sair en busca de novos conhecimentos,o primeiro contato que tive com liguagem de programação foi PYTHON, Hoje estudo Tecnologias voltada ao Desenvolvimento Web, na parte de Front End, e meu Proximo passo e o Back End assim me tornado Desenvolvedora FullStrack.</p>
+            </section><!-- text-mes -->
+        </section><!-- sobre -->
+        <section id='skills'>
+            <section>
+                <h3>Skills</h3>
+            </section>
+            <section class="img-skills"> 
+                <img title='Html' src='_imagens/html5.png'>
+            </section><!-- img-skills -->
+            <section class="img-skills"> 
+                <img title='Css' src='_imagens/css.png'>
+            </section><!-- img-skills -->
+            <section class="img-skills"> 
+                <img title='JavaScript' src='_imagens/js.png'>
+            </section><!-- img-skills -->
+            <section class="img-skills"> 
+                <img title='Python' src='_imagens/python.png'>
+            </section><!-- img-skills -->
+        </section><!-- skills -->
 
-    <div id='contato' class='conteiner contato'>
-
-    </div><!-- //conteiner contato -->
-
+    </div><!-- //conteiner -->
 </body>
 </html>
