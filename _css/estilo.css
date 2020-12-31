@@ -1,104 +1,264 @@
 html,body{
-    background-color:#e5dada ;
-    font-family: 'Nunito', sans-serif;
-}
-/* menu */
-nav{
-    background-color:#002642 ;
-    height: 40px;
-    width:100%;
-    position: fixed;
-    display:flex;
-    padding:20px 0px;
-    justify-content: flex-end;
-    z-index:1;
+    height:100%;
+    font-family: 'Nunito',sans-serif;
 }
 ul{
-    background-color:#002642 ;
     list-style: none;
-    position: absolute;
-    top:63px;
-    right:0px;
-    padding:0px;
-    width:150px; 
-    text-align: center;
-    display: none;
+    padding: 0;
+    margin: 0;
 }
 a{
-    text-decoration: none;
-    display: block;
-    padding:25px 10px;
-    color:#e5dada;
-}
-ul li a:hover{
-    background-color: #063d64;
-}
-label{
-    margin-right:20px;
-}
-label i{
-    font-size:2.0em;
-    color:#e5dada;
+    text-decoration:none;
 }
 input[type=checkbox]{
     display: none;
 }
-#menu:checked ~ ul{
-    display: block;
+.label-bars{
+    display: none;
+}
+/* navegação */
+.nav{
+    width:30%;
+    height:100vh;
+    text-align:center;
+    position: fixed;
+    background-image:linear-gradient(to right bottom, #011627, #1765a5);
+    background-attachment: fixed;
+}
+.cont-center{
+    position: relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.img-me img{
+    border:3px solid #FF9F1C;
+    border-radius: 50%;
+    width:50%;
+}
+.ul-menu{
+    padding: 20px;
+}
+.li-menu-img{
+    margin-bottom:15px;
+}
+.li-menu a{
+    color:#FDFFFC;
+    display:block;
+    padding:15px 5px;
+}
+.li-menu a:hover{
+    background-color: #FF9F1C;
+    color:#011627;
 }
 /*  */
+/* conteiner */
 .conteiner{
-    margin:0 auto;
-    width:90%;
-    border:1px solid red;
+    position: relative;
+    left:30%;
+    width:70%;
+    height:100%;
+}
+.cont-sec{
+    height:100vh;
+    text-align:center;
+    background-color:#011627;
+    border:1px solid #011627;
 }
 /* home */
-section#home .text{
-    text-align:center;
-    position: absolute;
+.cont-sec .cont-center{
+    position: relative;
+    top:50%;
     left:50%;
-    top:60%;
     transform: translate(-50%,-50%);
+    padding:10px 15px;
 }
 .text h1{
-    font-size:1.7em;
-    font-family: 'Libre Caslon Display', serif;
-    margin-bottom:50px;
+    font-size:1.8em;
+    color:#FF9F1C;
 }
-.text p{
-    font-size:1.2em;
+.text-welcome p{
+    margin:50px 0px;
+    font-size:1.0em;
+    color:white;
 }
-.text span{
-    margin-top:50px;
-    display: block;
-    font-size: 2.0em;
+.text-welcome p::before{
+    content: '\201c';
+    color:#FF9F1C;
+    font-size:2.2em;
+}
+.text-welcome p::after{
+    content: '\201d';
+    color:#FF9F1C;
+    font-size:2.2em;
+}
+.text-welcome span{
+    font-size:1.9em;
+    padding:5px 0px;
+    color:#FF9F1C;
 }
 /* sobre */
-
-#sobre{
-    text-align: center;
+h3{
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color:#FF9F1C;
 }
-#sobre section.img-me{
-    display: block;
-    width:100%;
-}
-section.img-me img{
-    border-radius: 100%;
-    width:40%;
-    border:5px solid #e59500;
-}
-section.text-me{
-    padding: 30px;
+.text-me p{
+    padding: 10px 50px;
+    text-align:left;
+    color:white;
 }
 /* skills */
-#skills{
-    text-align: center;
-    padding: 20px 0px;
-    height:100vh;
+.parent-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
 }
-#skills .img-skills img{
+.cont-sec .img-skills{
+    padding:10px 0px;
+    background-color:#011627;
+}
+.cont-sec .img-skills:hover{
+    background-color:rgba(255, 255, 255, 0.26);
+}
+.cont-sec .img-skills img{
+    border: 4px solid #FF9F1C;
     width:20%;
-    border-radius: 100%;
-    border:4px solid #e59500;
-    margin-top:15px;
+    border-radius:50%;
+}
+.cont-sec .img-skills p.name-skill{
+    color:white;
+}
+/* projetos */
+.img-project{
+    padding:20px;
+    width:100px;
+    margin-left:10px;
+}
+.img-project:hover{
+    background-color:rgba(255, 255, 255, 0.26);
+    text-align: center;
+}
+.img-project figcaption{
+    padding:5px 0px;
+}
+.img-project figcaption p{
+    padding:15px 0px;
+    color:white;
+}
+.img-project figcaption a{
+    color:#FF9F1C;
+    font-size:1.5em;
+    margin-left:10px;
+}
+.img-project img{
+    width:100%;
+    border:4px solid #ff9f1c;
+}
+.text-project h3{
+    margin-bottom:15px;
+    color:10px;
+}
+/* contato */
+.conteiner-ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.contato .ul-contato{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:40%;
+    margin-left:20px;
+    margin:0;
+    padding:0;
+}
+.ul-contato .li-contato{
+    width:100%;
+    width:20%;
+    text-align:center;
+}
+.li-contato a{
+    padding:10px;
+    display: block;
+    color:white;
+    font-size:1.5em;
+}
+.li-contato a:hover{
+    background-color:rgba(255, 255, 255, 0.26);
+}
+/* footer */
+.div-footer{
+    background-color: #ff9f1c;
+    height:100%;
+    text-align: center;
+}
+.div-footer footer{
+    color:#011627;
+    padding:5px 0px;
+}
+/* telas menores */
+@media screen and (max-width:868px){
+    .parent{
+        display:inline-block;
+    }
+    /* nav */
+    .nav{
+        width:100%;
+        height:10%;
+        z-index:1;
+    }
+    .label-bars{
+        display: block;
+    }
+    .ul-menu{
+        z-index:1;
+        background-color: #F71735;
+        width:40%;
+        position: absolute;
+        right:-500px;
+        top:30px;
+        transition: right 1s;
+    }
+    #menu-nav:checked ~ .ul-menu{
+        right:0px;
+        transform: translate(0px);
+    }
+    label{
+        position: absolute;
+        top:-15px;
+        right:10px;
+        z-index:1;
+        color:#ff9f1c;
+        font-size:1.5em;
+        margin:5px 10px;
+    }
+    .conteiner{
+        margin-top:63px;
+        left:0;
+        width:100%;
+    }
+    .icon-bars{
+        position: absolute;
+        z-index: 1;
+        color:#ff9f1c;
+        right:0px;
+        font-size:1.5em;
+    }
+    /* skills */
+    .cont-sec .img-skills{
+        width:20%;
+    }
+    .cont-sec .img-skills img{
+        width:30%;
+        border:2px solid #ff9f1c;
+    }
+    /* CONTATO */
+    .contato .ul-contato{
+        width:80%;
+    }
+    
 }
