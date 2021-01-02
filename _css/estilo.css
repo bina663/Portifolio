@@ -30,7 +30,6 @@ input[type=checkbox]{
     top:50%;
     left: 50%;
     transform: translate(-50%,-50%);
-
 }
 .img-me img{
     border:3px solid #FF9F1C;
@@ -75,12 +74,12 @@ input[type=checkbox]{
     padding:10px 15px;
 }
 .text h1{
-    font-size:1.8rem;
+    font-size:1.6rem;
     color:#FF9F1C;
 }
 .text-welcome p{
     margin:50px 0px;
-    font-size:1.0rem;
+    font-size:1.2em;
     color:white;
 }
 .text-welcome p::before{
@@ -99,6 +98,12 @@ input[type=checkbox]{
     color:#FF9F1C;
 }
 /* sobre */
+.sobre-center{
+    position: relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 h3{
     font-size: 1.5rem;
     margin-bottom: 30px;
@@ -118,15 +123,15 @@ h3{
     padding: 15px 0px;
 }
 .cont-sec .img-skills{
-    width:20%;
+    width:30%;
     padding:10px 0px;
-    background-color:#011627;
+    border:0.1px solid #03233dbe;
 }
 .cont-sec .img-skills:hover{
     background-color:rgba(255, 255, 255, 0.26);
 }
 .cont-sec .img-skills img{
-    border: 4px solid #FF9F1C;
+    border: 1px solid #FF9F1C;
     width:30%;
     border-radius:50%;
 }
@@ -134,11 +139,19 @@ h3{
     color:white;
 }
 /* projetos */
+.parent-project{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap:wrap;
+    align-content:center;
+    height:500px;
+}
 .img-project{
     padding:20px;
-    width:6.0rem;
+    width:6.5rem;
     margin-left:10px;
-    border:1px solid red;
+    border:0.1px solid #03233dbe;
 }
 .img-project:hover{
     background-color:rgba(255, 255, 255, 0.26);
@@ -220,7 +233,7 @@ h3{
     .ul-menu{
         z-index:1;
         background-color: #F71735;
-        width:40%;
+        width:30%;
         position: absolute;
         right:-500px;
         top:30px;
@@ -250,20 +263,42 @@ h3{
         right:0px;
         font-size:1.5em;
     }
-    /* fonts */
-    .text-me p{
-        font-size:0.76rem;
-        font-weight:550;
+    /* home */
+    .text-welcome span{
+    font-size:1.7rem;
+    padding:5px 0px;
+    color:#FF9F1C;
+}
+    .text-welcome p{
+        font-size:0.9em;
+    }
+    /* sobre */
+    .sobre-center{
+        position: relative;
+        top:0%;
+        left:50%;
+        transform: translateX(-50%);
     }
     /* skills */
     .cont-sec .img-skills{
-        width:25%;
+        width:30%;
     }
     .cont-sec .img-skills img{
-        width:1.59rem;
+        width:30%;
         border:1px solid #ff9f1c;
     }
     /* projetos */
+    .height{
+        height:100%;
+    }
+    .parent-project{
+        margin-top:15px;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-content:center;
+        height:100%;
+    }/* 
     .img-project{
         height:70px;
         padding:25px;
@@ -280,7 +315,7 @@ h3{
     }
     .img-project figcaption a{
         font-size:0.8rem;
-    }
+    } */
 
     /* CONTATO */
     .contato .ul-contato{
