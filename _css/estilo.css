@@ -220,7 +220,7 @@ h3{
     padding:5px 0px;
 }
 /* telas menores */
-@media screen and (max-width:868px){
+@media screen and (max-width:708px){
     .parent{
         display:inline-block;
     }
@@ -305,7 +305,8 @@ h3{
     }
     /* CONTATO */
     .contato .ul-contato{
-        width:80%;
+        width:50%;
+        border:1px solid red;
     }
     
 }
