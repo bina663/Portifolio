@@ -15,12 +15,9 @@
     <div class='parent'>
         <nav class='nav'>
             <div class='cont-center div-nav'>
-                 
-                <label for="menu-nav" class="label-bars"><i class="fas fa-bars"></i></label>
-                <input type="checkbox" class="label-bars" id="menu-nav">     
-                <ul class="ul-menu">
+                <ul class="ul-menu" id='ul-menu'>
                     <li class="li-menu-img"><div class="img-me">
-                    <img title="Essa sou eu" src='_imagens/perfil.jpg'>
+                    <img title="Essa sou eu" class="img-me" src='_imagens/perfil.jpg'>
                     </div></li>
                     <li class="li-menu"><a href='#home'>Home</a></li>
                     <li class="li-menu"><a href='#sobre'>Sobre Mim</a></li class="li-menu">
@@ -34,7 +31,7 @@
             <section id='home' class="cont-sec">
                 <section class="cont-center text-welcome text">
                     <h1>Seja Bem-Vindo(a) ao meu Portfolio</h1>
-                    <p>Me chamo Sabrina, e aqui é onde você sabera um pouco como atuo sendo Desenvolvedora Front End.</p>
+                    <p class="p-welcome">Me chamo Sabrina, e aqui é onde você sabera como sou coloco minhas habilidades com cada tecnologias em prática.</p>
                     <span>
                         <a href='https://github.com/sabrina663' target="_blank"><i class="fab fa-github"></i></a>
                         <a href='https://www.linkedin.com/in/sabrina-oliveira-ba80031b0' target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -42,10 +39,13 @@
                 </section><!-- text -->
             </section><!-- home -->
             <section id='sobre' class="cont-sec height">
-                <section class="text-me sobre-center parent-sobre">
-                    <h3>Sobre Mim</h3>
-                    <p>Meu nome e Sabrina tenho 19 anos, Conheci área de Programação graças a uma indicação de um curso de Logica da programação que fiz no Via Rápida um programa de governo do Estado de São Paulo, conclui e fui em busca de novos conhecimentos sobre área, o primeiro contato que tive com uma linguagem de programação do mercado foi PYTHON, Hoje estudo Tecnologias voltada ao Desenvolvimento Web, na parte de Front End, e meu Proximo passo e o Back End assim me tornado Desenvolvedora Web FullStrack.
-                    </p>
+                <section class="text-me sobre-center">
+                    <span class='sp-me'>
+                        <h3>Sobre Mim</h3>
+                        <img src='_imagens/perfil.jpg' class="img-sobre">
+                        <p>Meu nome e Sabrina tenho 19 anos, Conheci área de Programação graças a uma indicação de um curso de Logica da programação que fiz no Via Rápida um programa de governo do Estado de São Paulo, conclui e fui em busca de novos conhecimentos sobre área, o primeiro contato que tive com uma linguagem de programação do mercado foi PYTHON, Hoje estudo Tecnologias voltada ao Desenvolvimento Web, na parte de Front End, e meu Proximo passo e o Back End assim me tornado Desenvolvedora Web FullStrack.
+                        </p>
+                    </span>
                 </section><!-- text-me -->
             </section><!-- sobre -->
             <section id='skills' class="cont-sec">
@@ -54,11 +54,11 @@
                         <h3>Skills</h3>
                     </section>
                     <section class="parent-flex">
-                        <section class="img-skills"> 
+                        <section class="img-skills img"> 
                             <img title='Html' src='_imagens/html5.png'>
                             <p class="name-skill">HTML</p>
                         </section><!-- img-skills -->
-                        <section class="img-skills"> 
+                        <section class="img-skills img"> 
                             <img title='Css' src='_imagens/css.png'>
                             <p class="name-skill">CSS</p>
                         </section><!-- img-skills -->
@@ -77,50 +77,31 @@
                     </section><!-- parent-flex -->
                 </section><!-- cont-center -->
             </section><!-- skills -->
-            <section id='projetos' class="cont-sec height">
-                <section class="-center">
-                    <section class="text-project">
+            <section id='projetos' class="cont-sec">
+                <section class='cont-center'>
+                    <section class="skills">
                         <h3>Projetos</h3>
                     </section>
-                    <section class="parent-project">
-                        <section class="img-project">
-                            <figcaption>
-                                <p>Layout login Zelda</p>
-                                <a href='https://github.com/sabrina663/login_Zelda' target="_blank"><i class="fab fa-github"></i></a>
-                                <a href='https://sharp-swirles-f3fa5c.netlify.app/' target='_blank'><i class="fas fa-eye"></i></a>
-                            </figcaption>
-                        </section><!-- img-projects -->
-                        <section class="img-project">
-                            <figcaption>
-                                <p>Site Instucional</p>
-                                <a href='https://github.com/sabrina663/Site-responsivo-Intitucional' target='_blank'><i class="fab fa-github"></i></a>
-                                <a href='https://xenodochial-goldstine-81388c.netlify.app/' target='_blank'><i class="fas fa-eye"></i></a>
-                            </figcaption>
-                        </section><!-- img-projects -->
-                        <section class="img-project">
-                            <figcaption>
-                                <p>Projeto Tabuada</p>
-                                <a href='https://github.com/sabrina663/Tabuada' target="_blank"><i class="fab fa-github"></i></a>
-                                <a href='https://priceless-brown-d3c99f.netlify.app/' target='_blank'><i class="fas fa-eye"></i></a>
-                            </figcaption>
-                        </section><!-- img-projects -->
-                        <section class="img-project">
-                            <figcaption>
-                                <p>Sistema de login</p>
-                                <a href='https://github.com/sabrina663/Aut_login_BD.github.io' target="_blank"><i class="fab fa-github"></i></a>
-                                <a href='https://angry-hodgkin-0969b9.netlify.app/' target='_blank'><i class="fas fa-eye"></i></a>
-                            </figcaption>
-                        </section><!-- img-projects -->
-                        <section class="img-project">
-                            <figcaption>
-                                <p>Calculadora</p>
-                                <a href='https://github.com/sabrina663/My_calculadora' target="_blank"><i class="fab fa-github"></i></a>
-                                <a href='https://wonderful-brahmagupta-98482b.netlify.app/' target='_blank'><i class="fas fa-eye"></i></a>
-                            </figcaption>
-                        </section><!-- img-projects -->          
-                    </section><!-- parent-skills -->
+                    <section class="parent-flex">
+                        <section class="sec-pro img"> 
+                            <a href="https://angry-hodgkin-0969b9.netlify.app/" target="_blank"><img title='Sistema de login' src='_imagens/sistemalogin.png' class="img-pro"></a>
+                            <p class="name-project">Sistema de Login</p>
+                        </section><!-- img-skills -->
+                        <section class="sec-pro img"> 
+                            <a href="https://xenodochial-goldstine-81388c.netlify.app/" target="_blank"><img title='Site Institucional' src='_imagens/responsivo-telasmaiores.png' class="img-pro"></a>
+                            <p class="name-project">Site Institucional</p>
+                        </section><!-- img-skills -->
+                        <section class="sec-pro img"> 
+                            <a href="https://wonderful-brahmagupta-98482b.netlify.app/" target="_blank"><img title='Calculadora' src='_imagens/calculadora.png' class="img-pro"></a>
+                            <p class="name-project">Calculadora</p>
+                        </section><!-- img-skills -->
+                        <section class="sec-pro img"> 
+                            <a href="https://priceless-brown-d3c99f.netlify.app/" target="_blank"><img title='Tabuada' src='_imagens/tabuada.png' class="img-pro"></a>
+                            <p class="name-project">Tabuada</p>
+                        </section><!-- img-skills -->
+                    </section><!-- parent-flex -->
                 </section><!-- cont-center -->
-            </section><!-- projetos -->
+            </section><!-- skills -->
             <section id='contato' class="cont-sec">
                 <section class="contato cont-center">
                     <section>
@@ -143,5 +124,6 @@
         </div><!-- div-footer -->
         </div><!-- //conteiner -->
     </div><!-- parent -->
+    <script src="_js/script.js"></script>
 </body>
 </html>

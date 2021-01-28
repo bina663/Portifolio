@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sabrina663/Portfolio/issues"
   },
-  "homepage": "https://github.com/sabrina663/Portfolio#readme"
+  "homepage": "https://github.com/sabrina663/Portfolio#readme",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
 }
