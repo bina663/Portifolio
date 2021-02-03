@@ -2,9 +2,9 @@
 setInterval(function(){
     let topo = document.getElementById("scroll").getBoundingClientRect().top
     console.log(topo)
-    if(topo <= 557 ){
+    if(topo <= (window.innerHeight - 100)){
         $(".cont-nav").slideDown(1000);
-        if(topo <= 500){
+        if(topo <= (window.innerHeight - 300)){
             $(".div-anima").addClass("position")
         }
     }else{
