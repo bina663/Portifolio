@@ -1,129 +1,140 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/de8ebcc49f.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Nunito:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="_css/normalize.css">
-    <link rel="stylesheet" href='_css/estilo.css'>
-    <link rel="shortcup icon" href="_imagens/icone.jpg">
-    <title>Meu Portfolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="_css/estilo.css">
+    <title>Meu Portfolío</title>
 </head>
 <body>
-    <div class='parent'>
-        <nav class='nav'>
-            <div class='cont-center div-nav'>
-                <ul class="ul-menu" id='ul-menu'>
-                    <li class="li-menu-img"><div class="img-me">
-                    <img title="Essa sou eu" class="img-me" src='_imagens/perfil.jpg'>
-                    </div></li>
-                    <li class="li-menu"><a href='#home'>Home</a></li>
-                    <li class="li-menu"><a href='#sobre'>Sobre Mim</a></li class="li-menu">
-                    <li class="li-menu"><a href='#skills'>Skills</a></li class="li-menu">
-                    <li class="li-menu"><a href='#projetos'>Projetos</a></li>
-                    <li class="li-menu"><a href='#contato'>Contato</a></li>
-                </ul>
-            </div><!-- cont-center -->
-        </nav>
-        <div class="conteiner">
-            <section id='home' class="cont-sec">
-                <section class="cont-center text-welcome text">
-                    <h1>Seja Bem-Vindo(a) ao meu Portfolio</h1>
-                    <p class="p-welcome">Me chamo Sabrina, e aqui é onde você sabera como sou coloco minhas habilidades com cada tecnologias em prática.</p>
-                    <span>
-                        <a href='https://github.com/sabrina663' target="_blank"><i class="fab fa-github"></i></a>
-                        <a href='https://www.linkedin.com/in/sabrina-oliveira-ba80031b0' target="_blank"><i class="fab fa-linkedin"></i></a>
-                    </span>
-                </section><!-- text -->
-            </section><!-- home -->
-            <section id='sobre' class="cont-sec height">
-                <section class="text-me sobre-center">
-                    <span class='sp-me'>
-                        <h3>Sobre Mim</h3>
-                        <img src='_imagens/perfil.jpg' class="img-sobre">
-                        <p>Meu nome e Sabrina tenho 19 anos, Conheci área de Programação graças a uma indicação de um curso de Logica da programação que fiz no Via Rápida um programa de governo do Estado de São Paulo, conclui e fui em busca de novos conhecimentos sobre área, o primeiro contato que tive com uma linguagem de programação do mercado foi PYTHON, Hoje estudo Tecnologias voltada ao Desenvolvimento Web, na parte de Front End, e meu Proximo passo e o Back End assim me tornado Desenvolvedora Web FullStrack.
-                        </p>
-                    </span>
-                </section><!-- text-me -->
-            </section><!-- sobre -->
-            <section id='skills' class="cont-sec">
-                <section class='cont-center'>
-                    <section class="skills">
+    <nav class="cont-nav">
+        <section id="bars" class="sec-bars"><i class="fas fa-bars"></i></section>
+        <ul id='ul-m' class="ul-menu">
+            <li class="li-menu"><a href="#home">Home</a></li>
+            <li class="li-menu"><a href="#sobre">Sobre Mim</a></li>
+            <li class="li-menu"><a href="#skills">Skills</a></li>
+            <li class="li-menu"><a href="#projetos">Projetos</a></li>
+            <li class="li-menu"><a href="#contato">Contato</a></li>
+        </ul>
+    </nav><!-- cont-nav -->
+    <div class="container">
+        <div id='home' class="cont-div-home">
+            <section class="sec-home-text">
+                <h1 class="h1">Seja Bem-vindo(a) ao meu Portfólio.</h1>
+                <p class="p">Sou Desenvolvedora Front-End, e aqui você seberá um pouco sobre mim.</p>
+                <section class="sec-btn-home">
+                    <a href='https://github.com/sabrina663' target="_blank"><button class="btn-home"><i class="fab fa-github"></i></button></a>
+                </section><!-- sec-btn -->
+            </section><!-- sec-home-text -->
+        </div><!-- home -->
+        <div id='scroll' class="cont parent-sobre-skills div-anima">
+            <div id='sobre' class="cont-div-sobre">
+                <section class="sec-title">
+                    <h3>Sobre Mim</h3>
+                </section><!-- sec-title -->
+                <section class="sec-img">
+                    <img title="Essa sou eu" class="img img-sobre" src='_imagens/perfil.jpg'>
+                </section><!-- sec-img -->
+                <section class=" sec-sobre-text">
+                    <p>Meu nome e Sabrina tenho 19 anos, conheci área de Programação graças a uma indicação de um curso de Lógica de programação que fiz no Via Rápida, um programa de governo do Estado de São Paulo apos conclui fui em busca de novos conhecimentos sobre área, o primeiro contato que tive com uma linguagem de programação do mercado foi PYTHON, hoje estudo Tecnologias voltadas ao Desenvolvimento  Front-End, e meu Próximo passo e o Back-End assim me tornado Desenvolvedora Web.</p>
+                </section><!-- sec-sobre-text -->
+            </div><!-- sobre -->
+            <div id='skills' class="cont-div-skills">
+                    <section class="sec-title">
                         <h3>Skills</h3>
                     </section>
-                    <section class="parent-flex">
-                        <section class="img-skills img"> 
-                            <img title='Html' src='_imagens/html5.png'>
-                            <p class="name-skill">HTML</p>
-                        </section><!-- img-skills -->
-                        <section class="img-skills img"> 
-                            <img title='Css' src='_imagens/css.png'>
-                            <p class="name-skill">CSS</p>
-                        </section><!-- img-skills -->
-                        <section class="img-skills"> 
-                            <img title='JavaScript' src='_imagens/js.png'>
-                            <p class="name-skill">JavaScript</p>
-                        </section><!-- img-skills -->
-                        <section class="img-skills"> 
-                            <img title='Python' class="img-py" src='_imagens/python.png'>
-                            <p class="name-skill">Python</p>
-                        </section><!-- img-skills -->
-                        <section class="img-skills"> 
-                            <img title='Jquery' class="img-py" src='_imagens/jquery.png'>
-                            <p class="name-skill">Jquery</p>
-                        </section><!-- img-skills -->
-                    </section><!-- parent-flex -->
-                </section><!-- cont-center -->
-            </section><!-- skills -->
-            <section id='projetos' class="cont-sec">
-                <section class='cont-center'>
-                    <section class="skills">
-                        <h3>Projetos</h3>
-                    </section>
-                    <section class="parent-flex">
-                        <section class="sec-pro img"> 
-                            <a href="https://angry-hodgkin-0969b9.netlify.app/" target="_blank"><img title='Sistema de login' src='_imagens/sistemalogin.png' class="img-pro"></a>
-                            <p class="name-project">Sistema de Login</p>
-                        </section><!-- img-skills -->
-                        <section class="sec-pro img"> 
-                            <a href="https://xenodochial-goldstine-81388c.netlify.app/" target="_blank"><img title='Site Institucional' src='_imagens/responsivo-telasmaiores.png' class="img-pro"></a>
-                            <p class="name-project">Site Institucional</p>
-                        </section><!-- img-skills -->
-                        <section class="sec-pro img"> 
-                            <a href="https://wonderful-brahmagupta-98482b.netlify.app/" target="_blank"><img title='Calculadora' src='_imagens/calculadora.png' class="img-pro"></a>
-                            <p class="name-project">Calculadora</p>
-                        </section><!-- img-skills -->
-                        <section class="sec-pro img"> 
-                            <a href="https://priceless-brown-d3c99f.netlify.app/" target="_blank"><img title='Tabuada' src='_imagens/tabuada.png' class="img-pro"></a>
-                            <p class="name-project">Tabuada</p>
-                        </section><!-- img-skills -->
-                    </section><!-- parent-flex -->
-                </section><!-- cont-center -->
-            </section><!-- skills -->
-            <section id='contato' class="cont-sec">
-                <section class="contato cont-center">
-                    <section>
-                        <h3>Contatos</h3>
-                    </section>
-                    <section class="conteiner-ul">
-                        <ul class="ul-contato">
-                            <li class='li-contato'><a href='https://github.com/sabrina663' target="_blank"><i class="fab fa-github"></i></a></li>
-                            <li class='li-contato'><a href='https://www.linkedin.com/in/sabrina-oliveira-ba80031b0' target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                            <li class='li-contato'><a href='https://api.whatsapp.com/send?phone=5512996434704'target='_blank'><i class="fab fa-whatsapp-square"></i></a></li>
-                        </ul>
-                    </section><!-- conteiner-ul -->
-                    <span class="email">
-                        <a href='mailto:bina.oliver4@gmail.com' target="_blank">bina.oliver4@gmail.com</a>
-                    </span>
-                </section>
+                    <section class="parent-skills sec-skills">
+                        <span class="span-skills">
+                            <img title="Html 5" src="_imagens/html5.png" class="img img-skills">
+                            <figcaption class="fig-skills">
+                                <p>Html 5</p>
+                            </figcaption>
+                        </span>
+                        <span class="span-skills">
+                            <img title="Css 3" src="_imagens/css.png" class="img img-skills">
+                            <figcaption class="fig-skills">
+                                <p>Css 3</p>
+                            </figcaption>
+                        </span>
+                        <span class="span-skills">
+                            <img title="JavaScript" src="_imagens/js.png" class="img img-skills">
+                            <figcaption class="fig-skills">
+                                <p>JavaScript</p>
+                            </figcaption>
+                        </span>
+                        <span class="span-skills">
+                            <img title="Jquery" src="_imagens/jquery.png" class="img img-skills">
+                            <figcaption class="fig-skills">
+                                <p>Jquery</p>
+                            </figcaption>
+                        </span>
+                    </section><!-- parent-skills -->
+            </div><!-- skills -->
+        </div><!-- parent -->
+        <div id='projetos' class=" cont cont-div-pro div-anima">
+            <section class="sec-title">
+                <h3>Projetos</h3>
+            </section><!-- sec-title -->
+            <section class="parent-pro">
+                <span class="span-pro">
+                    <a href="https://angry-hodgkin-0969b9.netlify.app/" target="_blank">
+                        <span class="span-a-pro">
+                            <img src="_imagens/sistemalogin.png" class="img-pro">
+                            <figcaption class="fig-pro"><p>Sistema de Login</p>
+                            </figcaption>   
+                        </span>
+                    </a>
+                </span><!-- span-pro -->
+                <span class="span-pro">
+                    <a href="https://xenodochial-goldstine-81388c.netlify.app/" target="_blank">
+                        <span class="span-a-pro">
+                            <img src="_imagens/responsivo-telasmaiores.png" class="img-pro">
+                            <figcaption class="fig-pro"><p>Site Institucional Responsivo</p>
+                            </figcaption>   
+                        </span>
+                    </a>
+                </span><!-- span-pro -->
+                <span class="span-pro">
+                    <a href="https://priceless-brown-d3c99f.netlify.app/" target="_blank">
+                        <span class="span-a-pro">
+                            <img src="_imagens/tabuada.png" class="img-pro">
+                            <figcaption class="fig-pro"><p>Tabuada</p>
+                            </figcaption>   
+                        </span>
+                    </a>
+                </span><!-- span-pro -->
+                <span class="span-pro">
+                    <a href="https://wonderful-brahmagupta-98482b.netlify.app/" target="_blank">
+                        <span class="span-a-pro">
+                            <img src="_imagens/calculadora.png" class="img-pro">
+                            <figcaption class="fig-pro"><p>Calculadora</p>
+                            </figcaption>   
+                        </span>
+                    </a>
+                </span><!-- span-pro -->
+            </section><!-- parent-pro -->
+        </div><!--projetos -->
+        <div id='contato' class="cont cont-div-contato">
+            <section class="sec-title">
+                <h3>Contato</h3>
             </section>
+            <ul class="ul-contato">
+                <li class='li-contato'><a href='https://github.com/sabrina663' target="_blank"><i class="fab fa-github"></i></a></li>
+                <li class='li-contato'><a href='https://www.linkedin.com/in/sabrina-oliveira-ba80031b0' target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li class='li-contato'><a href='https://api.whatsapp.com/send?phone=5512996434704'target='_blank'><i class="fab fa-whatsapp-square"></i></a></li>
+            </ul>
+            <span class="span-mail">
+                <a href="mailto:bina.oliver4@gmail.com">bina.oliver4@gmail.com</a>
+            </span>
+        </div><!--contato -->
         <div class="div-footer">
-            <footer><p>&copy Todos os Direitos Reservados</p></footer>
+            <footer class="footer">
+                <p>&copy Todos os Direitos Reservados</p>
+            </footer>
         </div><!-- div-footer -->
-        </div><!-- //conteiner -->
-    </div><!-- parent -->
-    <script src="_js/script.js"></script>
+    </div><!-- conteiner -->
+    <script src=_js/script.js></script>
 </body>
 </html>
