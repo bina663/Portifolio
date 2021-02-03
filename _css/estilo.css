@@ -58,7 +58,7 @@ body{
 }
 /*home*/
 .cont-div-home{
-    background-image:linear-gradient( rgba(252, 247, 247, 0.322),rgba(12, 12, 12, 0.281));
+    background-image:linear-gradient( rgba(77, 76, 76, 0.658),rgba(12, 12, 12, 0.473));
     width:100%;
     height:100vh;
 }
