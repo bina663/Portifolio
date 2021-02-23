@@ -16,7 +16,7 @@ a{
 }
 /* nav */
 .cont-nav{
-    background-color:#141414 ;
+    background-color:rgb(17, 17, 49) ;
     width:100%;
     padding: 20px 0px;
     display:flex;
@@ -24,22 +24,21 @@ a{
     justify-content: flex-end;
     position: fixed;
     z-index:1;
-    border-bottom:1px solid #ffff;
+    border-bottom:1px solid rgb(3, 3, 27);
 }
 .cont-nav .ul-menu{
     display:flex;
     margin-right:10px;
 }
 .ul-menu .li-menu a{
-    color:#F5F5DC;
+    color:#dfdfdb;
     display:block;
     margin-right:15px;
-    padding:10px 5px;
+    padding:10px 15px;
     border-radius:5%;
 }
 .ul-menu .li-menu a:hover{
-    color:#141414;
-    background-color:orange;
+    background-color:rgb(247, 187, 75);
 }
 /* container e body */
 body{
@@ -58,7 +57,7 @@ body{
 }
 /*home*/
 .cont-div-home{
-    background-image:linear-gradient( rgba(77, 76, 76, 0.658),rgba(12, 12, 12, 0.473));
+    background-color:rgba(12, 12, 12, 0.712);
     width:100%;
     height:100vh;
 }
@@ -85,11 +84,12 @@ body{
 .sec-home-text .h1{
     font-size:2.5rem;
     margin-bottom:15px;
-    color:orange;
+    color: rgb(247, 187, 75);
+    font-weight:90px;
 }
 .sec-home-text .p{
     color:#ffff;
-    font-size:1.3rem;
+    font-size:1.4rem;
     padding:20px 0px;
 }
 .sec-btn-home{
@@ -136,7 +136,6 @@ img.img:hover{
     padding: 10px;
     line-height:25px;
     color:#ffff;
-    border:1px solid orange;
 }
 /* flex do sobre e skills e animacao */
 @keyframes animation-position{
@@ -168,8 +167,8 @@ img.img:hover{
     cursor:pointer
 }
 .span-skills .img-skills{
-    width:20%;
-    border:2px solid orange;
+    width:18%;
+    border:2px solid rgb(247, 187, 75);
     margin-bottom:5px;
 }
 .fig-skills{
@@ -199,25 +198,7 @@ img.img:hover{
 }
 .img-pro:hover{
     opacity: 1.0;
-    animation: bd 1s infinite;
     animation:sc 1s infinite alternate;
-}
-@keyframes bd{
-    0%{
-        border-top:2px solid orange;
-    }
-    25%{ 
-        border-right:2px solid orange;
-    }
-    50%{ 
-        border-bottom:2px solid orange;
-    }
-    75%{ 
-        border-left:2px solid orange;
-    }
-    100%{ 
-        border-top:2px solid orange;
-    }
 }
 @keyframes sc{
     from{
@@ -261,9 +242,10 @@ img.img:hover{
 }
 /* footer */
 .div-footer{
+    background-color: rgb(17, 17, 49);
     padding:20px 0px;
     text-align: center;
-    color:orange;
+    color:rgb(247, 187, 75);
 }
 .li-contato a i{
     font-size:1.5rem;
@@ -274,7 +256,7 @@ img.img:hover{
     font-size:1.5rem;
     text-align:center;
     border-top:1px solid rgba(255, 255, 255, 0.205);
-    color:orange;
+    color:rgb(247, 187, 75);
 }
 
 /* media */
@@ -286,7 +268,7 @@ img.img:hover{
     }
     .sec-bars i{
         font-size:2.2rem;
-        color:orange;
+        color:rgb(247, 187, 75);
     }
     /* nav */
     .cont-nav .ul-menu{
