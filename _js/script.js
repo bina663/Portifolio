@@ -1,10 +1,11 @@
 /* animação */
 setInterval(function(){
     let topo = document.getElementById("scroll").getBoundingClientRect().top
-    console.log(topo)
-    if(topo <= (window.innerHeight - 100)){
+    /* console.log(window.innerHeight)
+    console.log(topo) */
+    if(topo <= (window.innerHeight - 129)){
         $(".cont-nav").slideDown(500);
-        if(topo <= (window.innerHeight - 300)){
+        if(topo <= (window.innerHeight - 129)){
             $(".div-anima").addClass("position")
         }
     }else{
