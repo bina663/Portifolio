@@ -163,16 +163,15 @@ img.img:hover{
 }
 .span-skills{
     display: block;
-    padding:7px 0px;
-    cursor:pointer
+    cursor:pointer;
 }
 .span-skills .img-skills{
-    width:12%;
+    width:60px;
     border:2px solid rgb(247, 187, 75);
-    margin-bottom:5px;
+    margin-bottom:3.5px;
 }
 .fig-skills{
-    padding:10px 0px;
+    padding:5px 0px;
     color:#ffff;
     font-size:1.05rem;
 }
@@ -322,6 +321,7 @@ img.img:hover{
     /* skills */
     .parent-skills{
         display:flex;
+        justify-content: center;
         flex-direction:row;
         flex-wrap:wrap;
     }
@@ -330,7 +330,8 @@ img.img:hover{
         height:100%;
     }
     .span-skills .img-skills{
-        width:30%;
+        width:50px;
+        margin-left:25px;
     }
     .fig-skills{
         font-size:1.08rem;
