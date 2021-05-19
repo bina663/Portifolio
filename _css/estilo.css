@@ -16,29 +16,30 @@ a{
 }
 /* nav */
 .cont-nav{
-    background-color:rgb(17, 17, 49) ;
+    padding: 25px 100px;
     width:100%;
-    padding: 20px 0px;
-    display:flex;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: flex-end;
     position: fixed;
     z-index:1;
-    border-bottom:1px solid rgb(3, 3, 27);
+    background-color:rgb(17, 17, 49) ;
 }
-.cont-nav .ul-menu{
-    display:flex;
-    margin-right:10px;
+.cont-nav h1{
+    font-size: 2.5em;
+    color: rgb(247, 187, 75);
 }
-.ul-menu .li-menu a{
+.ul-menu{
+    display: flex;
+}
+.ul-menu a{
+    display: inline-block;
+    margin-left:25px;
     color:#dfdfdb;
-    display:block;
-    margin-right:15px;
-    padding:10px 15px;
-    border-radius:5%;
+    font-weight: 600;
 }
 .ul-menu .li-menu a:hover{
-    background-color:rgb(247, 187, 75);
+    border-bottom:2px solid rgb(247, 187, 75);
 }
 /* container e body */
 body{
@@ -112,7 +113,7 @@ body{
 /* sobre-mim */
 .cont-div-sobre{
     width:70%;
-    height: 100vh;
+    height: 100%;
     text-align:center;
     border-right:1px solid rgba(255, 255, 255, 0.205);
 }
@@ -218,6 +219,11 @@ img.img:hover{
     font-size:1.0rem;
     padding:15px 0px;
     color:#ffff;
+    font-weight: 900;
+}
+.fig-pro span{
+    width:50%;
+    font-weight: 500;
 }
 /* contata */
 .cont-div-contato{
@@ -270,22 +276,25 @@ img.img:hover{
         color:rgb(247, 187, 75);
     }
     /* nav */
+    .cont-nav{
+        padding: 20px;
+    }
     .cont-nav .ul-menu{
         border-bottom:1px solid #ffff;
-        text-align:center;
-        width:100%;
-        height:100vh;
-        display:none;
-        flex-direction:column;
-        margin-right:0px;
         background-color:#141414;
-        padding-top:10px 0px;
-        position:absolute;
-        top:75px;
-        
+        display: none;
+        width:100%;
+        height: 100vh;
+        padding: 50px 100px;
+        position: absolute;
+        top:90px;
+        text-align: center;
+
     }
     .ul-menu .li-menu{
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+        position: relative;
+        right: 120px;
     }
     .ul-menu .li-menu a{
         padding:15px 0px;
