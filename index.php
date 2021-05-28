@@ -90,76 +90,21 @@
                 <h3>Meus principais Projetos</h3>
             </section><!-- sec-title -->
             <section class="parent-pro">
-                <span class="span-pro">
-                    <a href="https://videofesta.com.br/" target="_blank">
-                        <span class="span-a-pro">
-                            <img src="_imagens/videofesta.jpg" class="img-pro">
-                            <figcaption class="fig-pro"><p>Video Festa</p>
-                                <span>Projeto real que participei fazendo a page FAQ,<br>meu papel foi aplicar as perguntas e respostas nessa page em HTML,<br>trabalhei como freelancer para uma empresa que estava desenvolvendo<br>o site, para a empresa de eventos Video Festa.</span>
-                            </figcaption>   
-                        </span>
-                    </a>
-                </span><!-- span-pro -->
-                <span class="span-pro">
-                    <a href="https://loginphp01.herokuapp.com" target="_blank">
-                        <span class="span-a-pro">
-                            <img src="_imagens/loginphp.jpg" class="img-pro">
-                            <figcaption class="fig-pro"><p>Login com PHP</p>
-                                <span>Projeto com intuito de praticar Session do PHP,<br>como não sabia Mysql usei um<br>array como banco de dados.</span>
-                            </figcaption>   
-                        </span>
-                    </a>
-                </span><!-- span-pro -->
-                <span class="span-pro">
-                    <a href="https://eager-torvalds-e78d71.netlify.app/" target="_blank">
-                        <span class="span-a-pro">
-                            <img src="_imagens/coffe.jpg" class="img-pro">
-                            <figcaption class="fig-pro"><p>Coffe Starburcks</p>
-                                <span>Projeto de Landing Page com fundo dinâmico,<br>feito com um tutorial no Youtube.</span>
-                            </figcaption>   
-                        </span>
-                    </a>
-                </span><!-- span-pro -->
-                <span class="span-pro">
-                    <a href="https://trusting-goldwasser-5b0afd.netlify.app/" target="_blank">
-                        <span class="span-a-pro">
-                            <img src="_imagens/api_rick_morty.jpg" class="img-pro">
-                            <figcaption class="fig-pro"><p>API Rick and Morty <small>(Em Desenvolvimento)</small></p>
-                                <span>Nesse projeto usei API da série Rick and Morty,<br>ainda pretento adicionar<br>uma filtragem por gênero, especie e status.</span>
-                            </figcaption>   
-                        </span>
-                    </a>
-                </span><!-- span-pro -->
-                <span class="span-pro">
-                    <a href="https://landingpage66.herokuapp.com/" target="_blank">
-                        <span class="span-a-pro">
-                            <img src="_imagens/landing_page.png" class="img-pro">
-                            <figcaption class="fig-pro"><p>Compra de Pacotes</p>
-                                <span>Projeto feito com PHP, com regras de acesso,<br>que envia um <u>e-mail</u> como uma simulação de compra.</span>
-                            </figcaption>   
-                        </span>
-                    </a>
-                </span><!-- span-pro -->
-                <span class="span-pro">
-                    <a href="https://segurocelular.herokuapp.com/" target="_blank">
-                        <span class="span-a-pro">
-                            <img src="_imagens/seguro_celular.jpg" class="img-pro">
-                            <figcaption class="fig-pro"><p>Seguro de Celular</p>
-                                <span>Projeto de Landing Page<br>de Seguro de Celular feito com PHP.</span>
-                            </figcaption>   
-                        </span>
-                    </a>
-                </span><!-- span-pro -->
-                <span class="span-pro">
-                    <a href="https://pedantic-babbage-714469.netlify.app/" target="_blank">
-                        <span class="span-a-pro">
-                            <img src="_imagens/psdtohtml.jpg" class="img-pro">
-                            <figcaption class="fig-pro"><p>Valentine´s Day</p>
-                                <span>Nesse projeto o intuito foi<br>refazer um arquivo em PSD para HTML e CSS.</span>
-                            </figcaption>   
-                        </span>
-                    </a>
-                </span><!-- span-pro -->
+                <? require_once('projetos.php');
+                    foreach($projetos as $key => $projeto){?>
+                        <span class="span-pro">
+                            <a href="<?echo$projeto['link']?>" target="_blank">
+                                <span class="span-a-pro">
+                                    <img src="_imagens/<?echo $projeto['imagem']?>" class="img-pro">
+                                    <figcaption class="fig-pro"><p><?echo $projeto['nome']?></p>
+                                        <span><?echo $projeto['descrisao']?></span>
+                                    </figcaption>   
+                                </span>
+                            </a>
+                        </span><!-- span-pro -->
+
+                    
+                <?}?>
             </section><!-- parent-pro -->
         </div><!--projetos -->
         <div id='contato' class="cont cont-div-contato">
