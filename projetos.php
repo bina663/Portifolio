@@ -10,6 +10,7 @@
         ['nome' => 'Gerador de Senha','descrisao' => "Gerador de senha em cada refresh gera uma nova senha aleatoria", 'imagem' => "geradordesenha.jpg", 'link' => "https://gerador01.herokuapp.com/"], */
         ['nome' => 'Loja de Games','descrisao' => "Um sistema de compra de jogos, onde após<br>realizar o pedido um email sera enviado.", 'imagem' => "lojadejogos.jpg", 'link' => "https://carrinhophp01.herokuapp.com/"],
         ['nome' => 'The Beatles','descrisao' => "Fiz esse projeto no começo dos meus estudos<br>e refiz pouco tempo atrás, e um projeto simples<br>onde pratiquei HTML e CSS.", 'imagem' => "beatles.jpg", 'link' => "https://dreamy-jennings-da804b.netlify.app/index.html"],
-        ['nome' => 'Tela de preço','descrisao' => "Tela de preço flexbox.", 'imagem' => "telapreco.jpg", 'link' => "https://carrinhophp01.herokuapp.com/"]
+        ['nome' => 'Tela de preço','descrisao' => "Tela de preço flexbox.", 'imagem' => "telapreco.jpg", 'link' => "https://carrinhophp01.herokuapp.com/"],
+        ['nome' => 'Bloco de notas','descrisao' => "Bloco de notas com banco de dados Mysql conectado.", 'imagem' => "blocodenotas.jpg", 'link' => "http://blocodenotas.great-site.net/index.php"]
     );
 ?>
