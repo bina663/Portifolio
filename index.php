@@ -90,21 +90,21 @@
                 <h3>Meus principais Projetos</h3>
             </section><!-- sec-title -->
             <section class="parent-pro">
-                <? require_once('projetos.php');
+                <?php require_once('projetos.php');
                     foreach($projetos as $key => $projeto){?>
                         <span class="span-pro">
-                            <a href="<?echo$projeto['link']?>" target="_blank">
+                            <a href="<?php echo $projeto['link'];?>" target="_blank">
                                 <span class="span-a-pro">
-                                    <img src="_imagens/<?echo $projeto['imagem']?>" class="img-pro">
-                                    <figcaption class="fig-pro"><p><?echo $projeto['nome']?></p>
-                                        <span><?echo $projeto['descrisao']?></span>
+                                    <img src="_imagens/<?php echo $projeto['imagem'];?>" class="img-pro">
+                                    <figcaption class="fig-pro"><p><?php echo $projeto['nome'];?></p>
+                                        <span><?php echo $projeto['descrisao'];?></span>
                                     </figcaption>   
                                 </span>
                             </a>
                         </span><!-- span-pro -->
 
                     
-                <?}?>
+                <?php };?>
             </section><!-- parent-pro -->
         </div><!--projetos -->
         <div id='contato' class="cont cont-div-contato">

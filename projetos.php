@@ -1,10 +1,10 @@
-<?
+<?php
     $projetos = array(
         ['nome' => 'Video Festa','descrisao' => "Projeto real que participei fazendo a page FAQ,<br>meu papel foi aplicar as perguntas e respostas nessa page em HTML,<br>trabalhei como freelancer para uma empresa que estava desenvolvendo<br>o site, para a empresa de eventos Video Festa.", 'imagem' => "videofesta.jpg", 'link' => 'https://videofesta.com.br/'],
         ['nome' => 'Login com PHP','descrisao' => "Projeto com intuito de praticar Session do PHP,<br>como não sabia Mysql usei um<br>array como banco de dados.", 'imagem' => "loginphp.jpg", 'link' => "https://loginphp01.herokuapp.com"],
         ['nome' => 'Coffe Starburcks','descrisao' => "Projeto de Landing Page com fundo dinâmico,<br>feito com um tutorial no Youtube.", 'imagem' => "coffe.jpg", 'link' => "https://eager-torvalds-e78d71.netlify.app/"],
-        ['nome' => 'Api Rick and Morty','descrisao' => "API Rick and Morty <small>(Em Desenvolvimento)</small></p><span>Nesse projeto usei API da série Rick and Morty,<br>ainda pretento adicionar<br>uma filtragem por gênero, especie e status.", 'imagem' => "api_rick_morty.jpg", 'link' => 'https://trusting-goldwasser-5b0afd.netlify.app/'],
-        ['nome' => 'Compra de Pacotes','descrisao' => "Projeto feito com PHP, com regras de acesso,<br>que envia um <u>e-mail</u> como uma simulação de compra.", 'imagem' => "landing_page.png", 'link' => "https://landingpage66.herokuapp.com/"],
+        ['nome' => 'Api Rick and Morty','descrisao' => "API Rick and Morty <small>(Em Desenvolvimento)</small></p><span>Nesse projeto usei API da série Rick and Morty,<br>ainda pretento adicionar<br>uma filtragem por gênero, especie e status.", 'imagem' => "api_rick_morty.jpg", 'link' => 'https://trusting-goldwasser-5b0afd.netlify.app/'],/* 
+        ['nome' => 'Compra de Pacotes','descrisao' => "Projeto feito com PHP, com regras de acesso,<br>que envia um <u>e-mail</u> como uma simulação de compra.", 'imagem' => "landing_page.png", 'link' => "https://landingpage66.herokuapp.com/"], */
         ['nome' => 'Seguro de Celular','descrisao' => "Projeto de Landing Page<br>de Seguro de Celular feito com PHP.", 'imagem' => "seguro_celular.jpg", 'link' => "https://segurocelular.herokuapp.com/"],
         ['nome' => 'Valentine´s Day','descrisao' => "Nesse projeto o intuito foi<br>refazer um arquivo em PSD para HTML e CSS.", 'imagem' => "psdtohtml.jpg", 'link' => "https://pedantic-babbage-714469.netlify.app/"],/* 
         ['nome' => 'Gerador de Senha','descrisao' => "Gerador de senha em cada refresh gera uma nova senha aleatoria", 'imagem' => "geradordesenha.jpg", 'link' => "https://gerador01.herokuapp.com/"], */
