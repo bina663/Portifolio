@@ -4,9 +4,9 @@ function start(){
         let topo = document.getElementById("scroll").getBoundingClientRect().top
         /* console.log(window.innerHeight)
         console.log(topo) */
-        if(topo <= (window.innerHeight - 129)){
+        if(topo <= (window.innerHeight - 135)){
             $(".cont-nav").slideDown(500);
-            if(topo <= (window.innerHeight - 129)){
+            if(topo <= (window.innerHeight - 135)){
                 $(".div-anima").addClass("position")
             }
         }else{

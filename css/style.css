@@ -11,6 +11,9 @@ ul{
 a{
     text-decoration:none;
 }
+.color-font{
+    color: rgb(247, 187, 75);
+}
 .sec-bars{
     display: none;
 }
@@ -23,11 +26,10 @@ a{
     align-items: center;
     position: fixed;
     z-index:1;
-    background-color:rgb(17, 17, 49) ;
+    background-color:rgb(14, 14, 40);
 }
 .cont-nav h1{
     font-size: 2.5em;
-    color: rgb(247, 187, 75);
     font-family: 'Roboto Slab', serif;
 }
 .ul-menu{
@@ -35,17 +37,25 @@ a{
 }
 .ul-menu a{
     display: inline-block;
-    margin-left:25px;
+    margin-left:5px;
     color:#dfdfdb;
     font-weight: 600;
+    padding: 5px 15px;
 }
 .ul-menu .li-menu a:hover{
-    border-bottom:2px solid rgb(247, 187, 75);
+    background-color: rgba(10, 10, 28, 0.92);
+    color: #b4b4b3;
+    border-radius: 5px;
+}
+.ul-menu .li-menu a.curriculo:hover{
+    background-color: rgb(247, 187, 75);
+    color: #ffffff;
+    border-radius: 5px;
 }
 /* container e body */
 body,html{
     scroll-behavior:smooth;
-    background-image: url(../_imagens/bg.jpg);
+    background-image: url(../media/imagens/background.jpg);
     background-size:cover;
     background-position:center;
     background-attachment: fixed;
@@ -55,12 +65,12 @@ body,html{
     width:100%;
 }
 .cont{
-    background:#141414ee;
+    background:#0d0d0df9;
     width:100%;
 }
 /*home*/
 .cont-div-home{
-    background-color:rgba(12, 12, 12, 0.712);
+    background-color:rgba(12, 12, 12, 0.866);
     width:100%;
     height:100vh;
 }
@@ -87,7 +97,6 @@ body,html{
 .sec-home-text .h1{
     font-size:2.5rem;
     margin-bottom:15px;
-    color: rgb(247, 187, 75);
     font-weight:90px;
     font-family: 'Roboto Slab', serif;
 }
@@ -121,11 +130,11 @@ body,html{
     border-right:1px solid rgba(255, 255, 255, 0.205);
 }
 .cont-div-sobre .sec-img{
-    padding:20px 0px;
+    padding:4px 0px;
 }
 img.img{
     border-radius:50%;
-    width:20%;
+    width:15%;
     opacity:0.5;
     cursor:pointer;
     transition: all 0.9s;
@@ -136,97 +145,60 @@ img.img:hover{
 }
 .sec-sobre-text{
     width:70%;
-    margin:5% auto;
-    padding: 10px;
+    margin:4% auto;
+    padding: 5px;
     line-height:25px;
     color:#ffff;
 }
-/* flex do sobre e skills e animacao */
-@keyframes animation-position{
-    from{
-        transform: translatex(-900px);
-    }
-    to{
-        transform: translatex(0px);
-    }
-}
 .parent-sobre-skills{
-    opacity:0;
     display: flex;
-}
-
-.position{
-    animation: animation-position 3s;
-    opacity:1;
 }
 /* skills */
 .cont-div-skills{
     text-align:center;
     width:30%;
-    height:100vh;
 }
 .span-skills{
     display: block;
     cursor:pointer;
 }
 .span-skills .img-skills{
-    width:60px;
-    border:2px solid rgb(247, 187, 75);
+    width:50px;
     margin-bottom:3.5px;
 }
-.fig-skills{
-    padding:5px 0px;
-    color:#ffff;
-    font-size:1.05rem;
-}
 /* projeto */
-.cont-div-pro{
-    height:100%;
-    width:100%;
-}
-.parent-pro{
-    padding: 10px 15px;;
+.sec-pro{
     display: flex;
-    flex-direction:row;
     justify-content: center;
     flex-wrap: wrap;
 }
-.span-pro .img-pro{
-    border:2px solid #ffff;
+.div-pro{
+    text-align: center;
+    width: 400px;
+}
+.div-pro img{
     border-radius: 2px;
-    width:200px;
-    height:130px;
+    width:150px;
+    height:90px;
+    object-fit: cover;
     opacity:0.5;
-    transition: all 1s;
+    border: 1px solid rgba(135, 135, 135, 0.413);
+    transition: all 0.5s;
 }
-.img-pro:hover{
+.div-pro img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
     opacity: 1.0;
-    animation:sc 1s infinite alternate;
 }
-@keyframes sc{
-    from{
-        transform:scale(1);
-    }
-    to{
-        transform:scale(1.2)
-    }
-}
-.span-pro .span-a-pro{
-    padding: 10px;
-    text-align: center;
-    display:block;
-    margin:0px 20px;
-}
-.span-pro .fig-pro{
-    text-align: center;
-    font-size:1.0rem;
-    padding:15px 0px;
+.div-pro h6{
     color:#ffff;
-    font-weight: 900;
+    font-size: 0.9em;
 }
-.fig-pro span{
-    width:50%;
-    font-weight: 500;
+.div-pro p{
+    color:#ffff;
+    font-size: 0.8em;
+    word-break: break-all;
+    padding: 15px;
 }
 /* contata */
 .cont-div-contato{
@@ -253,7 +225,6 @@ img.img:hover{
     background-color: rgb(17, 17, 49);
     padding:20px 0px;
     text-align: center;
-    color:rgb(247, 187, 75);
 }
 .li-contato a i{
     font-size:1.5rem;
@@ -264,7 +235,6 @@ img.img:hover{
     font-size:1.5rem;
     text-align:center;
     border-top:1px solid rgba(255, 255, 255, 0.205);
-    color:rgb(247, 187, 75);
     font-family: 'Roboto Slab', serif;
 }
 
@@ -281,24 +251,27 @@ img.img:hover{
     }
     /* nav */
     .cont-nav{
+        width: 100%;
         padding: 20px;
     }
     .cont-nav .ul-menu{
-        border-bottom:1px solid #ffff;
-        background-color:#141414;
         display: none;
-        width:100%;
-        height: 100vh;
-        padding: 50px 100px;
+        background-color:#141414;
         position: absolute;
         top:90px;
+        width:100vmax;
+        height: 100vh;
+        right:0px;
         text-align: center;
-
+        border-bottom:1px solid rgba(255, 255, 255, 0.663);
+        
+        width:100%;
+        padding: 50px 0px;
     }
     .ul-menu .li-menu{
         margin-bottom: 15px;
         position: relative;
-        right: 120px;
+        right: 160px;
     }
     .ul-menu .li-menu a{
         padding:15px 0px;
@@ -341,9 +314,10 @@ img.img:hover{
     .cont-div-skills{
         width:100%;
         height:100%;
+        padding: 10px;
     }
     .span-skills .img-skills{
-        width:50px;
+        width:40px;
         margin-left:25px;
     }
     .fig-skills{
