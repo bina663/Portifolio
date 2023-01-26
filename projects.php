@@ -3,7 +3,7 @@
         
         ['name' => 'Loja de Games','description' => "Um sistema de compra de jogos, onde após<br>realizar o pedido um email sera enviado.", 'image' => "lojagames.jpg", 'link' => "http://portfoliosabrinaoliver-shop.preview-domain.com/lojagames/"],
         
-        ['name' => 'AHS: Asylum','description' => "Projeto feito pra concretizar meus conhecimentos sobre API,<br>pra isso crei uma API com <strong>Node.js</strong>, e esse projeto consome essa API criada.", 'image' => "asylum.png", 'link' => 'https://ahs-asylum.onrender.com/'],
+        ['name' => 'AHS: Asylum','description' => "Projeto feito pra concretizar meus conhecimentos sobre API,<br>pra isso crei uma API com <strong>Node.js</strong>, e esse projeto consome essa API criada.", 'image' => "asylum.png", 'link' => 'https://fierce-necklace-goat.cyclic.app/'],
 
         ['name' => 'Api Rick and Morty','description' => "Esse projeto consome uma API da serie em questão, e é possivel filtrar os personagens<br>por alguma categoria especifica.", 'image' => "api_rick_morty.jpg", 'link' => 'http://portfoliosabrinaoliver-shop.preview-domain.com/apiRickyMorty/'],
 
