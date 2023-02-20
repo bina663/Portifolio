@@ -78,7 +78,7 @@
                 <?php foreach($projects as $project){?>
                     <div class='div-pro'>
                         <a href="<?= $project['link']; ?>" target='_blank'>
-                            <img src="media/projects/<?= $project['image'];?>" class="img-pro">
+                            <img src="<?= $project['image'];?>" class="img-pro">
                         </a>
                         <h6><?= $project['name'];?></h6>
                         <p><?= $project['description']?></p>
