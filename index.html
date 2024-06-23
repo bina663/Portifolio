@@ -5,7 +5,10 @@
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -22,6 +25,8 @@
             <div class="sub-div">
                 <h2>Sobre mim</h2>
                 <p>Comecei a estudar programação em 2019, fazendo um curso de lógica de programação sem saber ao certo do que se tratava. Porém, logo na primeira aula, me encantei pelo mundo da programação e busquei aprender mais. Aprofundei meus conhecimentos em Python, seguido por HTML, CSS, JavaScript e PHP. Aliás, PHP é uma linguagem que gosto bastante, mas também trabalho com Node.js e Python. Ingressei no mercado em uma empresa de tecnologia como estagiária e hoje ocupo o cargo de desenvolvedora plena na mesma empresa. Estou atualmente no último período da faculdade de Análise de Sistemas. Nas horas vagas, além de jogar minha saga favorita de Resident Evil, estou sempre estudando algo novo, tanto na área web quanto no desenvolvimento de jogos. Eu e um grupo de amigos nos juntamos para participar de game jams como uma equipe, sob o nome Kanaru Studio, o que também me permite explorar novos desafios e projetos criativos.</p>
+                </br>
+                <p>Tenho experiência em desenvolver sites, web scrapers e APIs, incluindo a implementação de novas funcionalidades, como a integração da API do Mercado Pago para processamento de pagamentos entre outras funcionalidades.</p>
             </div>
         </div><!-- sobre -->
         <div class="skills">
@@ -46,40 +51,70 @@
         <div class="projetos">
             <div class="sub-div">
                 <h2>Projetos</h2>
-                <p>Veja meus projetos</p>
+                <p>Veja meus projetos, clique para pode acessar</p>
                 <ul class="flex">
                     <li>
-                        <a href="https://github.com/bina663/">
+                        <a href="https://portfoliosabrinaoliver.com/enigma/" target="_blank">
                             <img src="media/project/enigma.png" alt="Enigma">
                         
-                            <h3>Nome do projeto</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit aperiam quidem soluta veritatis iusto officia hic. Adipisci distinctio, magni sint totam ipsa alias aperiam perferendis temporibus iure ratione sapiente itaque.</p>
+                            <h3>Enigma</h3>
+                            <h4>Projeto feito com PHP e MVC</h4>
+                            <p>Foi um desafio que fiz entre amigos, no qual o vencedor ganharia um nitro do Discord. O desafio teve a duração de 4 dias até que um vencedor fosse declarado.</p>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/bina663/">
-                            <img src="media/project/enigma.png" alt="Enigma">
+                        <a target="_blank">
+                            <img src="media/project/naopronto.png" alt="Gestor Financeiro">
                         
-                            <h3>Nome do projeto</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit aperiam quidem soluta veritatis iusto officia hic. Adipisci distinctio, magni sint totam ipsa alias aperiam perferendis temporibus iure ratione sapiente itaque.</p>
+                            <h3>Gestor Financeiro (Não finalizado)</h3>
+                            <h4>Projeto feito com Laravel, Blade e MySql</h4>
+                            <p>E controlador Financeiro pessoal para gerenciar seus gastos, que tambem exporta para o excel.</p>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/bina663/">
-                            <img src="media/project/enigma.png" alt="Enigma">
+                        <a href="https://cool-druid-678791.netlify.app/" target="_blank">
+                            <img src="media/project/ahs.png" alt="Americ Horror Story">
                         
-                            <h3>Nome do projeto</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit aperiam quidem soluta veritatis iusto officia hic. Adipisci distinctio, magni sint totam ipsa alias aperiam perferendis temporibus iure ratione sapiente itaque.</p>
+                            <h3>Americ Horror Story</h3>
+                            <h4>Projeto feito com Vue.js</h4>
+                            <p>Criei uma API que contém informações sobre personagens da série. Este projeto apenas consome essas informações. Se quiser utilizá-lo ou algo do tipo, basta acessar o link abaixo.</p>
+                            <a class="link-api" href="https://api-ahs.vercel.app/">Api Americ horror Story</a>
                         </a>
                     </li>
-                    
+                    <li>
+                        <a href="https://dreamy-jennings-da804b.netlify.app/index.html" target="_blank">
+                            <img src="media/project/beatles.png" alt="Beatles">
+                        
+                            <h3>Beatles</h3>
+                            <h4>Projeto feito com Html e CSS</h4>
+                            <p>Falando sobre minha banda favorita o Beatles.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank">
+                            <img src="media/project/naopronto.png" alt="Resident Evil" target="_blank">
+                            <h3>Resident Evil (Não finalizado)</h3>
+                            <h4>Projeto feito com React</h4>
+                            <p>Estou desenvolvendo um site que conta a história da saga Resident Evil e curiosidades sobre os jogos.</p>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
         <div class="contato">
             <div class="sub-div">
                 <h2>Contato</h2>
-                <p>Entre em contato</p>
+                <ul class="flex">
+                    <li>
+                        <p><strong>whatsapp: </strong>(12)9434704</p>
+                    </li>
+                    <li>
+                        <p><strong>Discord: </strong>binaoliver</p>
+                    </li>
+                    <li>
+                        <p><strong>email: </strong>bina.oliver4@gmail.com</p>
+                    </li>
+                </ul>
             </div>
         </div><!-- contato -->
         <footer>
