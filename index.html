@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="main">
+        <div id="home" class="home flex">
+            <div class="sub-div">
+                <h1 >Oi, prazer! Sou Sabrina, desenvolvedora de sistemas, Bem-vindo(a) ao meu portfólio!</h1>
+                <ul class="flex">
+                    <li><a href="https://github.com/bina663"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div><!-- home -->
+        <div class="sobre">
+            <div class="sub-div">
+                <h2>Sobre mim</h2>
+                <p>Comecei a estudar programação em 2019, fazendo um curso de lógica de programação sem saber ao certo do que se tratava. Porém, logo na primeira aula, me encantei pelo mundo da programação e busquei aprender mais. Aprofundei meus conhecimentos em Python, seguido por HTML, CSS, JavaScript e PHP. Aliás, PHP é uma linguagem que gosto bastante, mas também trabalho com Node.js e Python. Ingressei no mercado em uma empresa de tecnologia como estagiária e hoje ocupo o cargo de desenvolvedora plena na mesma empresa. Estou atualmente no último período da faculdade de Análise de Sistemas. Nas horas vagas, além de jogar minha saga favorita de Resident Evil, estou sempre estudando algo novo, tanto na área web quanto no desenvolvimento de jogos. Eu e um grupo de amigos nos juntamos para participar de game jams como uma equipe, sob o nome Kanaru Studio, o que também me permite explorar novos desafios e projetos criativos.</p>
+            </div>
+        </div><!-- sobre -->
+        <div class="skills">
+            <div class="sub-div">
+                <h2>Skills</h2>
+                <p>Abaixo as minhas habilidades.</p>
+                <ul class="flex">
+                    <li><img src="media/skill/html.png" alt="html"></li>
+                    <li><img src="media/skill/css.png" alt="css"></li>
+                    <li><img src="media/skill/js.png" alt="javascript"></li>
+                    <li><img src="media/skill/react.png" alt="react"></li>
+                    <li><img src="media/skill/node.png" alt="Node"></li>
+                    <li><img src="media/skill/php.png" alt="php"></li>
+                    <li><img src="media/skill/laravel.png" alt="laravel"></li>
+                    <li><img src="media/skill/mysql.png" alt="mysql"></li>
+                    <li><img src="media/skill/python.png" alt="python"></li>
+                    <li><img src="media/skill/gcloud.png" alt="Google cloud"></li>
+                    
+                </ul>
+            </div>
+        </div><!-- skills -->
+        <div class="projetos">
+            <div class="sub-div">
+                <h2>Projetos</h2>
+                <p>Veja meus projetos</p>
+                <ul class="flex">
+                    <li>
+                        <a href="https://github.com/bina663/">
+                            <img src="media/project/enigma.png" alt="Enigma">
+                        
+                            <h3>Nome do projeto</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit aperiam quidem soluta veritatis iusto officia hic. Adipisci distinctio, magni sint totam ipsa alias aperiam perferendis temporibus iure ratione sapiente itaque.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/bina663/">
+                            <img src="media/project/enigma.png" alt="Enigma">
+                        
+                            <h3>Nome do projeto</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit aperiam quidem soluta veritatis iusto officia hic. Adipisci distinctio, magni sint totam ipsa alias aperiam perferendis temporibus iure ratione sapiente itaque.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/bina663/">
+                            <img src="media/project/enigma.png" alt="Enigma">
+                        
+                            <h3>Nome do projeto</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit aperiam quidem soluta veritatis iusto officia hic. Adipisci distinctio, magni sint totam ipsa alias aperiam perferendis temporibus iure ratione sapiente itaque.</p>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="contato">
+            <div class="sub-div">
+                <h2>Contato</h2>
+                <p>Entre em contato</p>
+            </div>
+        </div><!-- contato -->
+        <footer>
+            <p>Desenvolvido por Sabrina</p>
+        </footer>
+        <div class="back-home" id="back-home">
+            <a href="#home"><img src="media/icon/home.png" alt=""></a>
+        </div>
+    </div><!-- main -->
+
+
+
+    <script>
+        //Exibi o botão de voltar para o topo
+        setInterval(function(){
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop != 0) {
+                document.querySelector("#back-home").style.display = "block";
+            }else{
+                document.querySelector("#back-home").style.display = "none";
+            }
+        }, 500)
+
+    
+    </script>
+
+</body>
+</html>
